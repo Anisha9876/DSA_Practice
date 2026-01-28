@@ -9,13 +9,14 @@ public class Lt_24_RemoveDuplicates {
         int recent=arr[0];
         List<Integer> a=new ArrayList<>();
         a.add(arr[0]);
-        for(int i=1;i<arr.length;i++){
-            if(arr[i]!=recent){
+        for(int i=1;i<arr.length-1;i++){
+            if(arr[i]==recent){
                 a.add(arr[i]);
+
             }
             recent=arr[i];
         }
 
-        System.out.println(a);
+        System.out.println(a.size());
     }
 }
